@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title> 
+</head>
+<body>
+
+
+
+<div class="Container">
+    <div class="Collum1">
+        <p1>Calculadora de Churrasco</p1>
+        <p class="Title-1">Homens</p>
+        <div class= "quantity" data-app="product.quantity" id="quantidade">    
+            <input type="button" id="plus" value='-' onclick="process(-1)" />
+            <input id="quant" name="quant" class="text" size="1" type="text" value="0" maxlength="5" />
+            <input type="button" id="minus" value='+' onclick="process(1)">
+          </div>
+    </div>
+    
+    <div class="Collum2">
+        <p class="Title-1">Mulheres</p>
+        <div data-app="product.quantity" id="quantidade">    
+            <input type="button" id="plus" value='-' onclick="process2(-1)" />
+            <input id="quant2" name="quant2" class="text" size="1" type="text" value="0" maxlength="5" />
+            <input type="button" id="minus" value='+' onclick="process2(1)">
+          </div>
+    </div>
+    
+    <div class="Collum3">
+        <p class="Title-1">Crianças</p>
+        <div data-app="product.quantity" id="quantidade">    
+            <input type="button" id="plus" value='-' onclick="process3(-1)" />
+            <input id="quant3" name="quant3" class="text" size="1" type="text" value="0" maxlength="5" />
+            <input type="button" id="minus" value='+' onclick="process3(1)">
+          </div>
+    </div>
+    <div class="collum4">
+    </div>
+    <button id="calcular">Calcular</button>
+    <button id="limpar">Limpar</button>
+    <div id="resultados"></div>
+    </div>
+    <div id="spinner" style="display: none;">
+        <div class="loader"></div>
+    </div>
+    
+
+<script src="script.js">
+</script>
+</body>
+</html>
